@@ -1,0 +1,32 @@
+{
+
+  "manifest_version": 2,
+  "name": "Social Call",
+  "version": "1.0",
+
+  "description": "Replace social media posts with cries for help.",
+  "homepage_url": "https://github.com/ctrlaltdev/socialcall",
+  "icons": {
+    "18": "icons/socialcall.svg",
+    "24": "icons/socialcall.svg",
+    "36": "icons/socialcall.svg",
+    "48": "icons/socialcall.svg",
+    "72": "icons/socialcall.svg",
+    "96": "icons/socialcall.svg",
+    "128": "icons/socialcall.svg",
+    "256": "icons/socialcall.svg",
+    "512": "icons/socialcall.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.twitter.com/*",
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*"
+      ],
+      "js": ["socialcall.js"]
+    }
+  ]
+
+}
