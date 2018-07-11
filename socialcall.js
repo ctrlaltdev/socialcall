@@ -1,6 +1,6 @@
 console.info('Hear the cries of the people.')
 
-let platform = window.location.host
+let platform = window.location.hostname
 let url = window.location.href
 
 let cries = [
@@ -56,6 +56,7 @@ function instaCries() {
 function letTheTearsRun() {
   switch (platform) {
 
+    case 'mobile.twitter.com':
     case 'twitter.com':
       twitterCries()
       break;
