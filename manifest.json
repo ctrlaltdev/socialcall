@@ -1,11 +1,19 @@
 {
 
   "manifest_version": 2,
+
   "name": "Social Call",
-  "version": "1.0",
+  "version": "1.1.0",
+
   "author": "Yorick <yorick@ctrlaltdev.xyz>",
-  "description": "Replace social media posts with cries for help.",
+  "developer": {
+    "name": "Yorick",
+    "url": "https://ctrlaltdev.xyz"
+  },
+
+  "description": "Replace social media posts with 'cries for help'. This extension purpose is to highlight the deep social distress that dictate our behavior on social media.",
   "homepage_url": "https://github.com/ctrlaltdev/socialcall",
+  
   "icons": {
     "18": "icons/socialcall.svg",
     "24": "icons/socialcall.svg",
