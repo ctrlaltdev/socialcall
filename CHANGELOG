@@ -8,11 +8,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Infinite scroller handling
 
+## [1.1.2] - 2018-07-13
+### Fixed
+- Switch Icons ext from svg to png for Chrome (thanks a lot...)
+
 ## [1.1.1] - 2018-07-13
 ### Fixed
 - Selectors for mobile.twitter.com
 ### Changed
-- Refactored some functions respect DRY principle
+- Refactored some functions to respect DRY principle
 
 ## [1.1.0] - 2018-07-13
 ### Added

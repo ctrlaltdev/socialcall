@@ -3,7 +3,7 @@
   "manifest_version": 2,
 
   "name": "Social Call",
-  "version": "1.1.1",
+  "version": "1.1.2",
 
   "author": "Yorick <yorick@ctrlaltdev.xyz>",
   "developer": {
@@ -15,15 +15,14 @@
   "homepage_url": "https://github.com/ctrlaltdev/socialcall",
   
   "icons": {
-    "18": "icons/socialcall.svg",
-    "24": "icons/socialcall.svg",
-    "36": "icons/socialcall.svg",
-    "48": "icons/socialcall.svg",
-    "72": "icons/socialcall.svg",
-    "96": "icons/socialcall.svg",
-    "128": "icons/socialcall.svg",
-    "256": "icons/socialcall.svg",
-    "512": "icons/socialcall.svg"
+    "16": "icons/socialcall.png",
+    "32": "icons/socialcall@2x.png",
+    "48": "icons/socialcall@3x.png",
+    "64": "icons/socialcall@4x.png",
+    "96": "icons/socialcall@6x.png",
+    "128": "icons/socialcall@8x.png",
+    "256": "icons/socialcall@16x.png",
+    "512": "icons/socialcall@32x.png"
   },
 
   "content_scripts": [
