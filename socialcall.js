@@ -20,53 +20,29 @@ let cries = [
   "I post selfies online therefore I am."
 ]
 
-function twitterCries() {
-  let tweets = document.querySelectorAll('.js-tweet-text-container .js-tweet-text');
-
-  [].forEach.call(tweets, (tweet) => {
-    tweet.innerText = cries[Math.floor(Math.random() * Math.floor(cries.length))]
+function letThemCry(selectors) {
+  [].forEach.call(selectors, (item) => {
+    item.innerText = cries[Math.floor(Math.random() * Math.floor(cries.length))]
   })
-
-}
-
-function facebookCries() {
-  let posts = document.querySelectorAll('.userContentWrapper .userContent');
-
-  [].forEach.call(posts, (post) => {
-    post.innerText = cries[Math.floor(Math.random() * Math.floor(cries.length))]
-  })
-
-  let comments = document.querySelectorAll('.UFICommentBody');
-
-  [].forEach.call(comments, (comment) => {
-    comment.innerText = cries[Math.floor(Math.random() * Math.floor(cries.length))]
-  })
-
-}
-
-function instaCries() {
-  let posts = document.querySelectorAll('.Xl2Pu .gElp9 span');
-
-  [].forEach.call(posts, (post) => {
-    post.innerText = cries[Math.floor(Math.random() * Math.floor(cries.length))]
-  })
-
 }
 
 function letTheTearsRun() {
   switch (platform) {
 
     case 'mobile.twitter.com':
+      letThemCry()
+      break;
     case 'twitter.com':
-      twitterCries()
+      letThemCry(document.querySelectorAll('.js-tweet-text-container .js-tweet-text'))
       break;
   
     case 'www.facebook.com':
-      facebookCries()
+      letThemCry(document.querySelectorAll('.userContentWrapper .userContent'))
+      letThemCry(document.querySelectorAll('.UFICommentBody'))
       break;
   
     case 'www.instagram.com':
-      instaCries()
+      letThemCry(document.querySelectorAll('.Xl2Pu .gElp9 span'))
       break;
   
   }
