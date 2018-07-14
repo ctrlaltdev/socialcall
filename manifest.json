@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Social Call",
   "version": "1.0",
-
+  "author": "Yorick <yorick@ctrlaltdev.xyz>",
   "description": "Replace social media posts with cries for help.",
   "homepage_url": "https://github.com/ctrlaltdev/socialcall",
   "icons": {
