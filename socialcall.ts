@@ -1,7 +1,7 @@
 console.info('Hear the cries of the people.')
 
 let platform: string = window.location.hostname
-let url: string = window.location.href
+let url: string
 
 let cries: string[] = [
   "Please give me validation, I am filled with self doubt.",
@@ -30,7 +30,12 @@ function letTheTearsRun(): void {
   switch (platform) {
 
     case 'mobile.twitter.com':
-      letThemCry(document.querySelectorAll('article.rn-1oszu61 .rn-13yce4e span'))
+      let checkReactLoaded = window.setInterval(() => {
+        if (document.querySelector('section.rn-1oszu61.rn-1efd50x.rn-14skgim.rn-rull8r.rn-mm0ijv.rn-13yce4e.rn-fnigne.rn-ndvcnb.rn-gxnn5r.rn-deolkf.rn-6koalj.rn-1pxmb3b.rn-7vfszb.rn-eqz5dr.rn-1mnahxq.rn-61z16t.rn-p1pxzi.rn-11wrixw.rn-ifefl9.rn-bcqeeo.rn-wk8lta.rn-9aemit.rn-1mdbw0j.rn-gy4na3.rn-bnwqim.rn-1lgpqti .rn-1oszu61.rn-1efd50x.rn-14skgim.rn-rull8r.rn-mm0ijv.rn-13yce4e.rn-fnigne.rn-ndvcnb.rn-gxnn5r.rn-deolkf.rn-6koalj.rn-1pxmb3b.rn-7vfszb.rn-eqz5dr.rn-1mnahxq.rn-61z16t.rn-p1pxzi.rn-11wrixw.rn-ifefl9.rn-bcqeeo.rn-9aemit.rn-gy4na3.rn-wk8lta.rn-bnwqim.rn-1lgpqti') !== null) {
+          clearInterval(checkReactLoaded)
+          letThemCry(document.querySelectorAll('article.rn-1oszu61.rn-1efd50x.rn-14skgim.rn-rull8r.rn-mm0ijv.rn-13yce4e.rn-fnigne.rn-ndvcnb.rn-gxnn5r.rn-deolkf.rn-6koalj.rn-1pxmb3b.rn-7vfszb.rn-eqz5dr.rn-1mnahxq.rn-61z16t.rn-p1pxzi.rn-11wrixw.rn-ifefl9.rn-bcqeeo.rn-1k3wbuw.rn-1sbig5n.rn-l4ido4.rn-1pob48r.rn-bnwqim.rn-1lgpqti .rn-13yce4e.rn-fnigne.rn-ndvcnb.rn-gxnn5r.rn-deolkf.rn-1qtguxu.rn-1471scf.rn-1lw9tu2.rn-10u92zi.rn-cygvgh.rn-16dba41.rn-ad9z0x.rn-1mnahxq.rn-61z16t.rn-p1pxzi.rn-11wrixw.rn-wk8lta.rn-9aemit.rn-1mdbw0j.rn-gy4na3.rn-bnwqim.rn-bauka4.rn-q42fyq.rn-qvutc0'))
+        }
+      },100)
       break;
     case 'twitter.com':
       letThemCry(document.querySelectorAll('.js-tweet-text-container .js-tweet-text'))
@@ -49,11 +54,11 @@ function letTheTearsRun(): void {
 }
 
 (() => {
-  letTheTearsRun()
   window.setInterval(() => {
     if(url !== window.location.href ) {
       url = window.location.href
       letTheTearsRun()
+      console.log('RUN')
     }
   }, 100)
 })()
