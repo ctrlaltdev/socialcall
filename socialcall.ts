@@ -50,7 +50,7 @@ function letTheTearsRun(): void {
 
 (() => {
   letTheTearsRun()
-  let checkURL = window.setInterval(() => {
+  window.setInterval(() => {
     if(url !== window.location.href ) {
       url = window.location.href
       letTheTearsRun()
