@@ -1,0 +1,35 @@
+{
+  "name": "socialcall",
+  "version": "1.1.2",
+  "description": "🗨️ Social Media Existential Crisis, Browser Extension Version ",
+  "private": true,
+  "main": "socialcall.js",
+  "scripts": {
+    "start": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrlaltdev/socialcall.git"
+  },
+  "keywords": [
+    "browser",
+    "firefox",
+    "chrome",
+    "javascript",
+    "typescript",
+    "social",
+    "social-media",
+    "extention",
+    "add-on"
+  ],
+  "author": "Yorick <yorick@ctrlaltdev.xyz>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ctrlaltdev/socialcall/issues"
+  },
+  "homepage": "https://github.com/ctrlaltdev/socialcall#readme",
+  "dependencies": {
+    "typescript": "^2.9.2"
+  }
+}
