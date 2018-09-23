@@ -1,4 +1,6 @@
-# Social Call
+[![GitHub release](https://img.shields.io/github/release/ctrlaltdev/socialcall.svg?style=for-the-badge)](https://github.com/ctrlaltdev/socialcall/releases)
+[![licence](https://img.shields.io/github/license/ctrlaltdev/socialcall.svg?style=for-the-badge)](https://github.com/ctrlaltdev/socialcall/blob/master/LICENCE.md)
+![TypeScript](https://img.shields.io/badge/_-TS-007ACC.svg?style=for-the-badge)
 
 This extension purpose is to highlight the deep social distress that dictate our behavior on social media.
 
